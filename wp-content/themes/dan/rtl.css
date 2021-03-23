@@ -1,0 +1,314 @@
+/*
+Theme Name: Dan
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+li > ul,
+li > ol {
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+/* Accessibility */
+
+.screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+
+/* Forms */
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+/* Custom logo */
+
+.custom-logo-link img {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.custom-logo-link img {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+}
+
+/* Custom header */
+
+.has-header-video .wp-custom-header iframe,
+.has-header-video .wp-custom-header video,
+.has-header-video .wp-custom-header iframe {
+	right: 50%;
+	left: auto;
+}
+
+@supports ( object-fit: cover ) {
+    .has-header-image .wp-custom-header img,
+	.has-header-video .wp-custom-header video,
+	.has-header-video .wp-custom-header iframe {
+        right: 0;
+		left: auto;
+    }
+}
+
+.wp-custom-header .wp-custom-header-video-button {
+	right: 16px;
+	left: auto;
+}
+
+/* Navigation */
+
+.main-navigation ul {
+	padding-right: 0;
+}
+
+.main-navigation .menu-item-has-children > a {
+	margin-right: 0;
+	margin-left: 42px;
+}
+
+.dropdown-toggle {
+	right: auto;
+	left: 0;
+}
+
+.dropdown-toggle::after {
+	right: 0;
+	left: auto;
+	border-right-width: 1px;
+	border-left-width: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.main-navigation {
+		right: 0;
+		left: auto;
+	}
+
+	.main-navigation ul ul {
+		margin-right: 15px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation .menu-item-has-children > a::after {
+		right: auto;
+		left: 8px;
+	}
+
+	.main-navigation ul ul .menu-item-has-children > a::after {
+		content: "\f104";
+	}
+
+	.main-navigation .menu-item-has-children > a {
+		margin: 0;
+		padding-right: 15px;
+		padding-left: 40px;
+	}
+
+	.main-navigation ul ul {
+		right: -999em;
+		left: auto;
+	}
+
+	.main-navigation ul ul ul {
+		right: -999em;
+		left: auto;
+	}
+
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li.focus > ul {
+		right: auto;
+		left: 0;
+	}
+
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		right: 100%;
+		left: auto;
+	}
+}
+
+.social-navigation li + li {
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+/* Pagination */
+
+.prev.page-numbers {
+	float: right;
+}
+
+.next.page-numbers {
+	float: left;
+}
+
+.prev.page-numbers .fas,
+.next.page-numbers .fas {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.nav-previous {
+	float: right;
+	text-align: right;
+}
+
+.nav-next {
+	float: left;
+	text-align: left;
+}
+
+.nav-previous .fas {
+	margin-right: 0;
+	margin-left: 5px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.nav-next .fas {
+	margin-right: 5px;
+	margin-left: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* Sticky post */
+
+.sticky-post .fas {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/* Blog Entries */
+
+.entry-meta .byline {
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.entry-footer > span:not(:last-child) {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.entry-footer .fas {
+	margin-right: 0;
+	margin-left: 4px;
+}
+
+.entry-footer .cat-links a + a,
+.entry-footer .tags-links a + a {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.more-link {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.entry-content h3 {
+	padding-right: 10px;
+	padding-left: 0;
+	border-right: 5px solid #e0e0e0;
+    border-left: 0;
+}
+
+/* Comments */
+
+.comment-list .children > li {
+	padding-right: 10px;
+	padding-left: 0;
+}
+
+.comment-author .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.comment-metadata a.comment-edit-link {
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+.form-submit {
+	text-align: left;
+}
+
+.comment-form #wp-comment-cookies-consent {
+	margin: 0 0 0 10px;
+}
+
+.comment-content ul,
+.comment-content ol {
+	margin: 0 10px 20px 0;
+}
+
+/* Widgets */
+
+.widget {
+	margin-right: 4px;
+	margin-left: 0;
+}
+
+.widget .widget-title {
+	margin-right: -4px;
+	margin-left: 0;
+}
+
+.widget ul li li {
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+.widget_text ul,
+.widget_text ol {
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+.widget_text li > ul,
+.widget_text li > ol {
+	padding-right: 40px;
+	padding-left: 0;
+}
+
+.widget_text ul li li {
+	padding-right: 0;
+}
+
+.search-form .search-submit {
+	right: auto;
+	left: 0;
+}
+
+.tagcloud ul li {
+	margin: 0 0 10px 5px;
+	padding: 0;
+}
+
+/* Gallery */
+
+.gallery-item {
+	padding: 0 0 0 10px;
+}

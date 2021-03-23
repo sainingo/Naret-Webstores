@@ -1,0 +1,378 @@
+/*
+Theme Name: Dan
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+
+ # Typography
+ # Elements
+ # Links
+ # Alignments
+ # Captions
+ # Galleries
+ # RTL
+
+**/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #424242;
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote:before,
+blockquote:after {
+	content: "";
+}
+
+blockquote {
+	quotes: "" "";
+}
+
+q::before {
+	content: open-quote;
+}
+
+q::after{
+	content: close-quote; 
+}
+
+address {
+	margin: 0 0 20px;
+}
+
+pre {
+	margin-bottom: 20px;
+	padding: 20px;
+	max-width: 100%;
+	background-color: #eee;
+	border-radius: 3px;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	line-height: 1.5;
+	overflow: auto;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+}
+
+abbr,
+acronym {
+	cursor: help;
+}
+
+mark{
+	background-color: #e0e0e0;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #fafafa;
+}
+
+hr {
+	margin-bottom: 20px;
+	background-color: #e0e0e0;
+	border: 0;
+	height: 1px;
+}
+
+/* Lists */
+
+ul,
+ol {
+	margin: 0 0 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 20px 20px;
+}
+
+/* Images */
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+/* Tables */
+
+table {
+	border-collapse: collapse;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+thead th {
+	background-color: #eee;
+	border-bottom: solid 2px #e0e0e0;
+}
+
+th,
+td {
+	padding: 10px;
+	vertical-align: top;
+	border: solid 1px #e0e0e0;
+}
+
+table p {
+	margin-top: 0;
+}
+
+table p:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+a {
+	color: #1565c0;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #4527a0;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.aligncenter,
+.alignleft,
+.alignright{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+@media screen and (min-width: 768px) {
+	.alignleft {
+		display: inline;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.alignright {
+		display: inline;
+		float: right;
+		margin-left: 20px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	padding-top: 5px;
+	color: #616161;
+	font-size: 13px;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 20px;
+}
+
+.gallery-caption {
+	display: block;
+	padding-top: 5px;
+	color: #616161;
+	font-size: 13px;
+}
+
+.gallery-item {
+	display: inline-block;
+	margin: 0 0 20px;
+	padding: 0 10px 0 0;
+	text-align: center;
+	vertical-align: top;
+	width: 50%;
+}
+
+
+.gallery-columns-1 .gallery-item {
+	max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+@media screen and (min-width: 768px) {
+	.gallery-columns-4 .gallery-item {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 .gallery-item {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 .gallery-item {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 .gallery-item {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 .gallery-item {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 .gallery-item {
+		max-width: 11.11%;
+	}
+
+	.gallery-columns-6 .gallery-caption,
+	.gallery-columns-7 .gallery-caption,
+	.gallery-columns-8 .gallery-caption,
+	.gallery-columns-9 .gallery-caption {
+		display: none;
+	}
+}
+
+/*--------------------------------------------------------------
+# RTL
+--------------------------------------------------------------*/
+
+.rtl li > ul,
+.rtl li > ol {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.rtl .gallery-item {
+	padding: 0 10px 0 0;
+}

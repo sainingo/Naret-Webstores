@@ -1,0 +1,302 @@
+# Dan v1.1.5
+# Copyright (C) 2017 Yochi
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dan v1.1.5\n"
+"Report-Msgid-Bugs-To: Yochi <info@yochix2.com>\n"
+"POT-Creation-Date: 2018-07-27 17:41+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Yochi <info@yochix2.com>\n"
+"Language-Team: Yochi\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:41 inc/woocommerce.php:290 index.php:46 search.php:41
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:42 inc/woocommerce.php:291 index.php:47 search.php:42
+msgid "Next page"
+msgstr ""
+
+#: archive.php:43 inc/woocommerce.php:292 index.php:48 search.php:43
+msgid "Page"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:29
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#: footer.php:47
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:49
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: functions.php:49
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:50
+msgid "Social Links Menu"
+msgstr ""
+
+#: functions.php:114
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:116
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: functions.php:124
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:126 functions.php:136
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:134
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:188
+msgid "expand child menu"
+msgstr ""
+
+#: functions.php:189
+msgid "collapse child menu"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:41
+msgid "Menu"
+msgstr ""
+
+#: inc/custom-header.php:83
+msgid "Play background video"
+msgstr ""
+
+#: inc/custom-header.php:84
+msgid "Pause background video"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "Gray"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Blue Gray"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Custom"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:77
+#, php-format
+msgid "Front Page Section %d Content"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid ""
+"Select pages to feature in each area from the dropdowns. Add an image to a "
+"section by setting a featured image in the page editor. Empty sections will "
+"not be displayed."
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: inc/template-tags.php:35
+#, php-format
+msgid "<span class=\"screen-reader-text\">by</span> %s"
+msgstr ""
+
+#: inc/template-tags.php:52
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid "Categories"
+msgstr ""
+
+#: inc/template-tags.php:73
+msgid "Tags"
+msgstr ""
+
+#: inc/template-tags.php:85
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:108
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:136 template-parts/content-front-page-panels.php:31
+#: template-parts/content-front-page.php:26 template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/template-tags.php:168
+#, php-format
+msgid "Front Page Section %1$s Placeholder"
+msgstr ""
+
+#: inc/woocommerce.php:203
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce.php:207
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+
+#: inc/woocommerce.php:259
+#, fuzzy
+#| msgid "Home"
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: single.php:21
+msgid "Previous Post"
+msgstr ""
+
+#: single.php:22
+msgid "Next Post"
+msgstr ""
+
+#: template-parts/content-excerpt.php:14
+msgid "Featured"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:28 template-parts/content.php:51
+msgid "Pages:"
+msgstr ""
+
+#~ msgid "Theme: %1$s by %2$s."
+#~ msgstr ""
+
+#~ msgid "https://profiles.wordpress.org/yochix2"
+#~ msgstr ""
+
+#~ msgid "Yochi"
+#~ msgstr ""
+
+#~ msgid "Add widgets here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<span class=\"fa fa-clock-o\" aria-hidden=\"true\"></span><span class="
+#~ "\"screen-reader-text\">Posted on</span> %s"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<span class=\"fa fa-user-circle\" aria-hidden=\"true\"></span><span class="
+#~ "\"screen-reader-text\">by</span> %s"
+#~ msgstr ""
+
+#~ msgid "by %s"
+#~ msgstr ""
